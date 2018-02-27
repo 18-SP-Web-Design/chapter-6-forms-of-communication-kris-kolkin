@@ -6,10 +6,12 @@
 <title>Nested Groupings and Controls Within a Table</title>
 <style type="text/css">
 <!--
-legend	{float: left;
-		color: #0000fe;
+legend	{float: right;
+		color: black;
 		font-style: italic;
 		font-size: small}
+		
+		
 -->
 </style>
 </head>
@@ -24,43 +26,60 @@ legend	{float: left;
 
 	<fieldset><legend>Overall Grouping</legend>
 	<p>
-		Name: <input name="name" type="text" size="25" /> &nbsp; &nbsp;
+		Name: <input name="name" type="text" size="25" /> 
 		<br />
-		Email Address: <input name="email" type="email" size="25" /> &nbsp; &nbsp;
+		Email Address: <input name="email" type="email" size="25" /> 
 	</p>
-	</fieldset>
+	
 	
 	<section>
 	<fieldset><legend>First Sub Grouping</legend>
-	<p>
-	<br />Your Question Here:
+	<table>
+	<tr>
+	<td>
+		<br />Your Question Here:
+		<br />
+		<input name="radio1" type="radio" value="1" />Choice 1
+		<br />
+		<input name="radio1" type="radio" value="2" />Choice 2 
+	</td>
 	<br />
-	<input name="radio1" type="radio" value="1" />Choice 1&nbsp;
-	<br />
-	<input name="radio1" type="radio" value="2" />Choice 2 &nbsp;
+	<td>
+		Your Question here?
+		<br /><input name="checkbox" type="checkbox" value="1" />1
+		<br /><input name="checkbox" type="checkbox" value="2" />2 
+		<br /><input name="checkbox" type="checkbox" value="3" />3  
+		<br /><input name="checkbox" type="checkbox" value="4" />4 
+	</td>
+	<td>
+		Your Question here:<textarea name="other" rows="3" cols="100">Please type something</textarea>
+	</td>
+	</tr>	
+</table>
 
-	<br />
-	
-	Yuor Question here?
-	<br /><input name="checkbox" type="checkbox" value="none" />1&nbsp; 
-	<br /><input name="checkbox" type="checkbox" value="itunes" />2 &nbsp;
-	<br /><input name="checkbox" type="checkbox" value="amazon" />3  &nbsp;
-	<br /><input name="checkbox" type="checkbox" value="online" />4 &nbsp;
-	
-	<br /><textarea name="other" rows="3" cols="100">Your Question here:</textarea>
-
-</p>
 	</fieldset>
 	</section>
+	<section>
+	<fieldset>
+	<legend>Second Sub Grouping</legend><br />
+		Your Question Here:<br />
+		<select name="dropdown">
+			<option>Choice 1</option>
+			<option>Choice 2</option>
+			<option>Choice 3</option>
+			
+		
+		</select>
+	</fieldset>
+	</section>	
 	
 	
-	
-<p>
+<p style="text-align:center">
 <input type="submit" value="Submit" />
 <input type="reset" value="Reset" />
 </p>
+</fieldset>
 
-<br />Thank you for your completing our survey.</p>
 </form>
 </body>
 </html>
