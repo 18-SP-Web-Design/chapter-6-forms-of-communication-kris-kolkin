@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Nested Groupings and Controls Within a Table</title>
+<style type="text/css">
+<!--
+legend	{float: left;
+		color: #0000fe;
+		font-style: italic;
+		font-size: small}
+-->
+</style>
+</head>
+<body>
+
+<form method="post" action="mailto:kris.kolkin@lltc.edu">
+
+<header>
+	<h1>Nested Groupings and Controls Within a Table</h1>
+</header>
+
+
+	<fieldset><legend>Overall Grouping</legend>
+	<p>
+		Name: <input name="name" type="text" size="25" /> &nbsp; &nbsp;
+		<br />
+		Email Address: <input name="email" type="email" size="25" /> &nbsp; &nbsp;
+	</p>
+	</fieldset>
+	
+	<section>
+	<fieldset><legend>First Sub Grouping</legend>
+	<p>
+	<br />Your Question Here:
+	<br />
+	<input name="radio1" type="radio" value="1" />Choice 1&nbsp;
+	<br />
+	<input name="radio1" type="radio" value="2" />Choice 2 &nbsp;
+
+	<br />
+	
+	Yuor Question here?
+	<br /><input name="checkbox" type="checkbox" value="none" />1&nbsp; 
+	<br /><input name="checkbox" type="checkbox" value="itunes" />2 &nbsp;
+	<br /><input name="checkbox" type="checkbox" value="amazon" />3  &nbsp;
+	<br /><input name="checkbox" type="checkbox" value="online" />4 &nbsp;
+	
+	<br /><textarea name="other" rows="3" cols="100">Your Question here:</textarea>
+
+</p>
+	</fieldset>
+	</section>
+	
+	
+	
+<p>
+<input type="submit" value="Submit" />
+<input type="reset" value="Reset" />
+</p>
+
+<br />Thank you for your completing our survey.</p>
+</form>
+</body>
+</html>
