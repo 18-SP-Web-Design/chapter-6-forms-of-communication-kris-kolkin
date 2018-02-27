@@ -4,35 +4,73 @@
 <head>
 <meta charset="utf-8" />
 <title>Blu Wav Music</title>
-<!--Insert embedded style sheet here -->
+<style type="text/css">
+<!--
+legend	{float: left;
+		color: #0000fe;
+		font-style: italic;
+		font-size: small}
+-->
+</style>
 </head>
 <body>
 
-<!--Insert form method statement here -->
+<form method="post" action="mailto:kris.kolkin@lltc.edu">
 
 <header>
 	<img src="bluwavlogo.jpg" width="410" height="139" alt="Blu Wav logo" /></td>
 </header>
 
-<p>Print the form, complete the necessary information, and fax the form to us at 1-800-bluwavm.</p>
-
-<p>First Name: _________________________________________________</p>
-<p>Last Name: _________________________________________________</p>
-<p>E-mail Address: _________________________________________________</p>
-
-<p>Circle the type(s) of music that you prefer: &nbsp;Country&nbsp;Folk&nbsp;Latin&nbsp;Pop&nbsp;Rap&nbsp;Rock</p>
+<p>We would like to know what types of music you enjoy.  So we can provide that music via streaming and download.  Please complete our survey</p>
+	<fieldset><legend>Listener Information</legend>
+	<p>
+		First Name: <input name="firstname" type="text" size="25" /> &nbsp; &nbsp;
+		Last Name: <input name="lastname" type="text" size="25" /> &nbsp; &nbsp;
+		Email Address: <input name="email" type="email" size="25" /> &nbsp; &nbsp;
+	</p>
+	</fieldset>
 	
-<p>Where do you make most of your music purchases: &nbsp;Don't buy music&nbsp;iTunes&nbsp;Amazon&nbsp;Other online store&nbsp;Retail store</p>
-
-<p>Circle your favorite Internet radio station: &nbsp;Google&nbsp;Live 365&nbsp;Pandora&nbsp;Slacker</p>
-
-<p>Name station not listed: ____________</p>
-
-<p>What else can you tell us about your music preferences? _________________________________________________________________________________</p>
-
-<!--Insert Submit and Reset buttons here -->
+	<fieldset><legend>Music Genre and Purchasing info</legend>
+	<br />Select the type(s) of music that you prefer:
+	<br /><input name="musictype" type="checkbox" value="country" />Country &nbsp;
+	<input name="musictype" type="checkbox" value="folk" />Folk &nbsp;
+	<input name="musictype" type="checkbox" value="latin" />Latin &nbsp;
+	<input name="musictype" type="checkbox" value="pop" />Pop &nbsp;
+	<input name="musictype" type="checkbox" value="rap" />Rap &nbsp;
+	<input name="musictype" type="checkbox" value="rock" />Rock &nbsp;
+	
+	
+	<p>
+	Where do you buy your music?
+	<br /><input name="purchase" type="radio" value="none" />Dont buy music &nbsp; 
+	<input name="purchase" type="radio" value="itunes" />iTunes &nbsp;
+	<input name="purchase" type="radio" value="amazon" />Amazon &nbsp;
+	<input name="purchase" type="radio" value="online" />Other online store &nbsp;
+	<input name="purchase" type="radio" value="retail" />Retail Store &nbsp;
+	</p>
+	</fieldset>
+	
+	<fieldset><legend>Radio Stations</legend>
+	<p>
+	Favorite Internet radio station:
+	<select name="station">
+		<option>Goolge</option>
+		<option>Live 365</option>
+		<option>Pandora</option>
+		<option>Slacker</option>
+	</select>
+	</p>
+	&nbsp; &nbsp Name station not listed:
+	<input name="additstation" type="text" size="30" maxlength="30" />
+	<br /> What else can you tell us?
+	<br /><textarea name="other" rows="3" cols="100">Please type something</textarea>
+	</fieldset>
+<p>
+<input type="submit" value="Submit" />
+<input type="reset" value="Reset" />
+</p>
 
 <br />Thank you for your completing our survey.</p>
-
+</form>
 </body>
 </html>
