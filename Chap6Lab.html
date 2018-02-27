@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Nested Groupings and Controls Within a Table</title>
+<title>IT Questionnaire </title>
 <style type="text/css">
 <!--
 legend	{float: right;
@@ -20,11 +20,11 @@ legend	{float: right;
 <form method="post" action="mailto:kris.kolkin@lltc.edu">
 
 <header>
-	<h1>Nested Groupings and Controls Within a Table</h1>
+	<h1>Please answer a few questions</h1>
 </header>
 
 
-	<fieldset><legend>Overall Grouping</legend>
+	<fieldset><legend>Contact info</legend>
 	<p>
 		Name: <input name="name" type="text" size="25" /> 
 		<br />
@@ -33,26 +33,26 @@ legend	{float: right;
 	
 	
 	<section>
-	<fieldset><legend>First Sub Grouping</legend>
+	<fieldset><legend>Group 1</legend>
 	<table>
 	<tr>
 	<td>
-		<br />Your Question Here:
+		<br />Faculty or Staff:
 		<br />
-		<input name="radio1" type="radio" value="1" />Choice 1
+		<input name="radio1" type="radio" value="staff" />Staff
 		<br />
-		<input name="radio1" type="radio" value="2" />Choice 2 
+		<input name="radio1" type="radio" value="faculty" />faculty 
 	</td>
 	<br />
 	<td>
-		Your Question here?
-		<br /><input name="checkbox" type="checkbox" value="1" />1
-		<br /><input name="checkbox" type="checkbox" value="2" />2 
-		<br /><input name="checkbox" type="checkbox" value="3" />3  
-		<br /><input name="checkbox" type="checkbox" value="4" />4 
+		Computer Labs - Which labs do you use?
+		<br /><input name="checkbox" type="checkbox" value="A" />Room 105 Lab A
+		<br /><input name="checkbox" type="checkbox" value="B" />Room 111 Lab B 
+		<br /><input name="checkbox" type="checkbox" value="C" />302 Lab C  
+		<br /><input name="checkbox" type="checkbox" value="None" />Library / Learning Center 
 	</td>
 	<td>
-		Your Question here:<textarea name="other" rows="3" cols="100">Please type something</textarea>
+		Are there any issues in the rooms where you teach?<textarea name="other" rows="3" cols="100">Please type something</textarea>
 	</td>
 	</tr>	
 </table>
@@ -62,11 +62,13 @@ legend	{float: right;
 	<section>
 	<fieldset>
 	<legend>Second Sub Grouping</legend><br />
-		Your Question Here:<br />
+		Do we need another computer lab?<br />
 		<select name="dropdown">
-			<option>Choice 1</option>
-			<option>Choice 2</option>
-			<option>Choice 3</option>
+			<option></option>
+			<option>Yes</option>
+			<option>No</option>
+			<option>Dont Care</option>
+			
 			
 		
 		</select>
